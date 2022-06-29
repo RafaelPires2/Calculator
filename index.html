@@ -5,36 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>Calculadora</title>
 </head>
 <body>
     <div class="container">
         <main class="content">
-            <form action="" name="calculator">
+            <form id="calculadora" action="" name="calculator">
 
-                <input type="text" class="text-mainColor" name="text1" disabled>
-                <input type="text" class="text-mainColor" name="text12" value="C"
+                <input type="text" class="text mainColor" name="text1" disabled>
+                <input type="text" class="text1 mainColor" name="text12" value="C"
                  onclick="location.reload()"><br>
                  
-                 <input type="button" class="num-mainColor" name="btn9" value="9" onclick="displaynum(btn9.value)"> 
-                 <input type="button" class="num-mainColor" name="btn8" value="8" onclick="displaynum(btn8.value)">                  
-                 <input type="button" class="num-mainColor" name="btn7" value="7" onclick="displaynum(btn7.value)">                  
-                 <input type="button" class="num-add" name="btnAdd" value="+" onclick="displaynum(btnAdd.value)"><br>               
+                 <input type="button" class="num mainColor" name="btn9" value="9" onclick="displaynum(btn9.value)"> 
+                 <input type="button" class="num mainColor" name="btn8" value="8" onclick="displaynum(btn8.value)">                  
+                 <input type="button" class="num mainColor" name="btn7" value="7" onclick="displaynum(btn7.value)">                  
+                 <input type="button" class="num add" name="btnAdd" value="+" onclick="displaynum(btnAdd.value)"><br>               
 
-                 <input type="button" class="num-mainColor" name="btn6" value="6" onclick="displaynum(btn6.value)"> 
-                 <input type="button" class="num-mainColor" name="btn5" value="5" onclick="displaynum(btn5.value)">                  
-                 <input type="button" class="num-mainColor" name="btn4" value="4" onclick="displaynum(btn4.value)">                  
-                 <input type="button" class="num-sub" name="btnSub" value="-" onclick="displaynum(btnSub.value)"><br>               
+                 <input type="button" class="num mainColor" name="btn6" value="6" onclick="displaynum(btn6.value)"> 
+                 <input type="button" class="num mainColor" name="btn5" value="5" onclick="displaynum(btn5.value)">                  
+                 <input type="button" class="num mainColor" name="btn4" value="4" onclick="displaynum(btn4.value)">                  
+                 <input type="button" class="num sub" name="btnSub" value="-" onclick="displaynum(btnSub.value)"><br>               
 
-                 <input type="button" class="num-mainColor" name="btn3" value="6" onclick="displaynum(btn3.value)"> 
-                 <input type="button" class="num-mainColor" name="btn2" value="5" onclick="displaynum(btn2.value)">                  
-                 <input type="button" class="num-mainColor" name="btn1" value="4" onclick="displaynum(btn1.value)">                  
-                 <input type="button" class="num-mult" name="btnMult" value="*" onclick="displaynum(btnMult.value)"><br>               
+                 <input type="button" class="num mainColor" name="btn3" value="3" onclick="displaynum(btn3.value)"> 
+                 <input type="button" class="num mainColor" name="btn2" value="2" onclick="displaynum(btn2.value)">                  
+                 <input type="button" class="num mainColor" name="btn1" value="1" onclick="displaynum(btn1.value)">                  
+                 <input type="button" class="num mult" name="btnMult" value="*" onclick="displaynum(btnMult.value)"><br>               
 
-                 <input type="button" class="num-dot" name="dot" value="." onclick="displaynum(dot.value)"> 
-                 <input type="button" class="num-mainColor" name="btn0" value="0" onclick="displaynum(btn0.value)">                   
-                 <input type="button" class="num-igual" name="btnIgual" value="=" onclick="displaynum(btnIgual.value)">                  
-                 <input type="button" class="num-div" name="btnDiv" value="/" onclick="displaynum(btnDiv.value)"><br>
+                 <input type="button" class="num mainColor" name="dot" value="." onclick="displaynum(dot.value)"> 
+                 <input type="button" class="num mainColor" name="btn0" value="0" onclick="displaynum(btn0.value)">                   
+                 <input type="button" class="num igual" name="btnIgual" value="=" onclick="text1.value=eval(text1.value)">                  
+                 <input type="button" class="num div" name="btnDiv" value="/" onclick="displaynum(btnDiv.value)"><br>
 
             </form>                
             
